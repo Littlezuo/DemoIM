@@ -25,6 +25,8 @@ public class AddContactActivity extends Activity {
     private TextView mTv_add_contact_name;
     private UserInfo mUserInfo;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
