@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".controller.activity.AddContactActivity">
+    <RelativeLayout
+        android:background="@android:color/holo_blue_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="10dp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加联系人"
+            android:textSize="25sp"
+            />
+        <TextView
+            android:id="@+id/tv_add_contact_find"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查找"
+            android:textSize="25sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"/>
+
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/et_add_contact_input"
+        android:layout_margin="10dp"
+        android:hint="输入昵称/蚂蚁聊天账号"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:id="@+id/ll_add_contact">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/em_default_avatar"
+            />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="23sp"
+            android:id="@+id/tv_add_contact_name"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="昵称"/>
+        <Button
+            android:id="@+id/bt_add_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加"
+            android:background="@drawable/selector_splash_button"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.atguigu.demoim.controller.activity.LoginActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:padding="10dp"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:background="@android:color/holo_blue_light"/>
+<TextView
+    android:layout_width="match_parent"
+    android:textSize="35sp"
+    android:text="蚂蚁聊天"
+    android:gravity="center"
+    android:layout_marginTop="30dp"
+    android:layout_height="wrap_content"/>
+    <LinearLayout
+
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名:"
+            android:textSize="25sp"/>
+        <EditText
+            android:id="@+id/et_splash_user"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:hint="请输入用户名"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+        <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密    码:"
+            android:textSize="25sp"/>
+        <EditText
+            android:id="@+id/et_splash_pwd"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+     <RelativeLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+        <Button
+            android:id="@+id/bt_splash_register"
+            android:background="@drawable/selector_splash_button"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:textSize="25sp"/>
+        <Button
+            android:id="@+id/bt_splash_login"
+            android:background="@drawable/selector_splash_button"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:text="登录"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
